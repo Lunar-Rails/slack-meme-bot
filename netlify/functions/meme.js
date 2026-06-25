@@ -12,9 +12,10 @@ exports.handler = async (event) => {
     ownership: { url: `${BASE_URL}/gifs/ownership.gif`, title: "Take Ownership" },
     agency: { url: `${BASE_URL}/gifs/agency.gif`, title: "Act With Agency" },
     future: { url: `${BASE_URL}/gifs/future.gif`, title: "Focus on the Future" },
-    "one-team": { url: `${BASE_URL}/gifs/one-team.gif`, title: "One Team, One System" },
+    team: { url: `${BASE_URL}/gifs/one-team.gif`, title: "One Team, One System" },
     ship: { url: `${BASE_URL}/gifs/ship.gif`, title: "Ship Great Things" },
     truth: { url: `${BASE_URL}/gifs/truth.gif`, title: "Truth Over Comfort" },
+    ludicrous: { url: `${BASE_URL}/gifs/ludicrous.gif`, title: "Ludicrous Speed" },
   };
 
   if (!text) {
