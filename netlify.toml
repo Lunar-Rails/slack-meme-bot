@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/meme"
+  to = "/.netlify/functions/meme"
+  status = 200
+  force = true

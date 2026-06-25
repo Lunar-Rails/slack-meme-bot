@@ -1,0 +1,11 @@
+{
+  "name": "slack-meme-bot",
+  "version": "1.0.0",
+  "description": "Slack slash command meme bot — hosted on Netlify",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
