@@ -21,7 +21,13 @@ exports.handler = async (event) => {
     },
     ship: { url: `${BASE_URL}/gifs/ship.gif`, title: "Ship Great Things" },
     truth: { url: `${BASE_URL}/gifs/truth.gif`, title: "Truth Over Comfort" },
-    ludicrous: { url: `${BASE_URL}/gifs/ludicrous.gif`, title: "Ludicrous Speed" },
+    ludicrous: {
+      title: "Ludicrous Speed",
+      variants: {
+        ludicrous: `${BASE_URL}/gifs/ludicrous.gif`,
+        kermit: `${BASE_URL}/gifs/kermit.gif`,
+      },
+    },
   };
 
   if (!text) {
