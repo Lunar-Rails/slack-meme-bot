@@ -56,7 +56,7 @@ In Netlify dashboard → Site → Environment Variables, add:
 | Command | `/meme` |
 | Request URL | `https://your-site.netlify.app/meme` |
 | Short Description | `Post a company values meme` |
-| Usage Hint | `[ownership / agency / future / one-team / ship / truth]` |
+| Usage Hint | `[ownership / agency / future / team / ship / truth / ludicrous]` |
 
 6. Go to **OAuth & Permissions** > **Scopes** > add `commands`
 7. Click **Install App to Workspace**
@@ -71,6 +71,8 @@ In any Slack channel type:
 /meme ownership
 /meme truth
 /meme future
+/meme team          # random pick
+/meme team amigos   # specific image
 ```
 
 Type `/meme` with no argument to see the full list.
@@ -86,6 +88,18 @@ Type `/meme` with no argument to see the full list.
 newname: {
   url: `${BASE_URL}/gifs/newname.gif`,
   title: "Your Meme Title",
+},
+```
+
+To give a meme several images, use `variants` instead of `url`. `/meme newname` then picks one at random, and `/meme newname alt` picks a specific one:
+
+```js
+newname: {
+  title: "Your Meme Title",
+  variants: {
+    original: `${BASE_URL}/gifs/newname.gif`,
+    alt: `${BASE_URL}/gifs/newname-alt.gif`,
+  },
 },
 ```
 

@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Netlify CLI local state
+.netlify/
+
+# Local env vars (secrets like SLACK_VERIFICATION_TOKEN)
+.env
+.env.*
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Logs
+*.log
